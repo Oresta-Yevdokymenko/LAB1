@@ -1,10 +1,18 @@
 body{
     background-color: #ffffff;
     color: #801818;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-rows: 2fr 1fr;
 }
 h1{
     color: #464646;
 }
 nav{
-    ;
+    background-image: url(kurbits.jpg)  ;
+}
+#image
+{
+    grid-row: 1;
+    grid-column: 1;
 }
