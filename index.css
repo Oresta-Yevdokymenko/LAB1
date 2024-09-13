@@ -1,23 +1,44 @@
 body{
-    background-color: #ffffff;
-    color: #801818;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #fffec1;
+    color: #677A33;
+    font-family: cursive;
+    display: grid;
+    gap: 0.2em;
+    grid-template-areas:
+    "nav     nav      nav"
+    "image   image    image"
+    "article     article    aside"
+    "footer footer fotter";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    height: 100px;
 }
-h1{
-    color: #801818;
+a{
+    color: #fffec1;
+    text-decoration: none;
+}
+#h1{
+    color: #fffec1;
+    display: grid;
+    place-items: center;
 }
 #image{
     grid-area: image;
 }
-nav{
-    background-color: #801818;
-    color: #ffffff;
+#nav{
+    background-color: #677A33;
+    grid-area: nav;
 }
-main{
-    grid-area: main;
+#article{
+    grid-area: article;
 }
-footer{
-    grid-area: fotter;
-    background-color: #464646;
-    color: #ffffff;
+#aside{
+    background-color: #677A33;
+    color: #fffec1;
+    grid-area: aside;
+}
+#footer{
+    grid-area: footer;
+    background-color: #677A33;
+    color: #fffec1;
 }
