@@ -1,18 +1,23 @@
 body{
     background-color: #ffffff;
     color: #801818;
-    display: grid;
-    grid-template-columns: 2fr 1fr 1fr;
-    grid-template-rows: 2fr 1fr;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 h1{
-    color: #464646;
+    color: #801818;
+}
+#image{
+    grid-area: image;
 }
 nav{
-    background-image: url(kurbits.jpg)  ;
+    background-color: #801818;
+    color: #ffffff;
 }
-#image
-{
-    grid-row: 1;
-    grid-column: 1;
+main{
+    grid-area: main;
+}
+footer{
+    grid-area: fotter;
+    background-color: #464646;
+    color: #ffffff;
 }
