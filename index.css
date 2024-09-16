@@ -1,7 +1,13 @@
+@font-face
+{
+    font-family: "MyFont";
+    src: url("PlaywriteCU-VariableFont_wght.ttf");
+}
+
 body{
     background-color: #fff;
     color: #677A33;
-    font-family:cursive;
+    font-family:MyFont;
 }
 
 .main{
@@ -29,13 +35,13 @@ nav{
 h1{
     color: #677A33;
     text-align: center;
-    font-size: 30pt;
+    font-size: 40pt;
+    font-weight: 100;
 }
 
 h2{
     color:#222A0E;
     text-align: center;
-    font-size: medium;
 }
 
 .article1{
