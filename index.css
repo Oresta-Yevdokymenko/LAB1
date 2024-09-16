@@ -61,18 +61,25 @@ h2{
     text-align: left;
     margin-top: 1rem;
     padding: 0.5rem;
-    list-style-type: none;
 }
+
 #lunch_meny{
     color: #fff;
 }
+
 .sect1{
     grid-area: sect1;
     text-align: center;
+    list-style: none;
 }
+
 .sect2{
     grid-area: sect2;
     text-align: center;
+}
+
+ul{
+    list-style: none;
 }
 
 #footer{
