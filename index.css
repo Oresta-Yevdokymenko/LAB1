@@ -19,11 +19,11 @@ body{
 a{
     color: #222A0E;
     text-decoration: none;
-    padding: 5px;
+    padding: 0.2rem;
 }
 
 nav{
-    padding: 5px;
+    padding: 0.2rem;
 }
 
 h1{
@@ -54,7 +54,7 @@ h2{
     grid-area:aside;
     text-align: left;
     margin-top: 1rem;
-    padding: 10px;
+    padding: 0.5rem;
 }
 #lunch_meny{
     color: #fff;
@@ -70,7 +70,7 @@ h2{
     background-color: #677A33;
     color: #fff;
     grid-area: footer;
-    padding: 5px;
+    padding: 0.2rem;
 }
 
 @media only screen and (max-width: 550px)
@@ -85,6 +85,6 @@ h2{
         "footer";
         grid-template-columns:auto;
         grid-template-rows:1fr 1fr 2.5fr 1fr 1fr 0.5fr;
-        height: 200px;
+        height: 100px;
      }
 }
