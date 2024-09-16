@@ -1,7 +1,7 @@
 @font-face
 {
     font-family: "MyFont";
-    src: url("PlaywriteCU-VariableFont_wght.ttf");
+    src: url("images and font/PlaywriteCU-VariableFont_wght.ttf");
 }
 
 body{
@@ -61,15 +61,18 @@ h2{
     text-align: left;
     margin-top: 1rem;
     padding: 0.5rem;
+    list-style-type: none;
 }
 #lunch_meny{
     color: #fff;
 }
 .sect1{
     grid-area: sect1;
+    text-align: center;
 }
 .sect2{
     grid-area: sect2;
+    text-align: center;
 }
 
 #footer{
