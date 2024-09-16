@@ -18,7 +18,7 @@ body{
     "footer footer footer";
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows:3fr 2fr 1fr;
-    gap: 2rem;
+    gap: 3rem;
     height:100px;
 }
 
@@ -37,6 +37,7 @@ h1{
     text-align: center;
     font-size: 40pt;
     font-weight: 100;
+    margin: 0;
 }
 
 h2{
@@ -70,7 +71,6 @@ h2{
 .sect1{
     grid-area: sect1;
     text-align: center;
-    list-style: none;
 }
 
 .sect2{
@@ -103,4 +103,7 @@ ul{
         grid-template-rows:1fr 1fr 2.5fr 1fr 1fr 0.5fr;
         height: 100px;
      }
+h1{
+    font-size: 30px;
+}
 }
