@@ -1,51 +1,90 @@
 body{
-    background-color: #fffec1;
+    background-color: #fff;
     color: #677A33;
     font-family:cursive;
+}
+
+.main{
     display:grid;
-    grid-template-columns:1fr 1fr 1fr 1fr;
-    grid-template-rows:0.5fr 1fr 1fr 0.5fr;
-    height:100px;
     grid-template-areas:
-    "nav  nav  nav  nav"
-    "image   image    image image"
-    "article1     article2    aside aside"
-    "footer footer aside aside";
+    "art1  art2  aside"
+    "sect1 sect2 aside"
+    "footer footer footer";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows:3fr 2fr 1fr;
+    gap: 2rem;
+    height:100px;
 }
+
 a{
-    color: #fffec1;
+    color: #222A0E;
     text-decoration: none;
+    padding: 5px;
 }
+
+nav{
+    padding: 5px;
+}
+
 h1{
-    color: #fffec1;
-    display: grid;
-    place-items: center;
+    color: #677A33;
+    text-align: center;
+    font-size: 30pt;
 }
 
-#image{
-    grid-area:image;
-    margin: 0;
-}
-#nav{
-    background-color: #677A33;
-    grid-area:nav;
-    margin: 0;
-}
-#article1{
-    grid-area:article1;
-}
-#article2{
-    grid-area:article2;
+h2{
+    color:#222A0E;
+    text-align: center;
+    font-size: medium;
 }
 
-#aside{
+.article1{
+    grid-area:art1;
+    text-align: justify;
+}
+
+.article2{
+    grid-area:art2;
+    text-align: justify;
+}
+
+.aside{
     background-color: #677A33;
-    color: #fffec1;
+    color: #fff;
     grid-area:aside;
-    padding: auto;
+    text-align: left;
+    margin-top: 1rem;
+    padding: 10px;
 }
+#lunch_meny{
+    color: #fff;
+}
+.sect1{
+    grid-area: sect1;
+}
+.sect2{
+    grid-area: sect2;
+}
+
 #footer{
-    grid-area:footer;
     background-color: #677A33;
-    color: #fffec1;
+    color: #fff;
+    grid-area: footer;
+    padding: 5px;
+}
+
+@media only screen and (max-width: 550px)
+{ .main{
+        display:grid;
+        grid-template-areas:
+        "art1"
+        "art2"
+        "aside"
+        "sect1"
+        "sect2"
+        "footer";
+        grid-template-columns:auto;
+        grid-template-rows:1fr 1fr 2.5fr 1fr 1fr 0.5fr;
+        height: 200px;
+     }
 }

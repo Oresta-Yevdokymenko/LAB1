@@ -7,34 +7,48 @@
     <link rel="stylesheet" href="index.css">
   </head>
   <body>
-    <img id="image" src="picture.png" alt="flowers">
-
-    <nav id="nav">
+    <nav>
      <h1>SVENSK SOMMAR RESTAURANG</h1>
-     <a href="index.html">Hem</a>   <a href="#aside">Lunch Meny</a>   <a href="about.html">Öppettider</a>
+     <a href="index.html">Hem</a>
+     <a href="#lunch_meny">Lunch Meny</a>
+     <a href="#oppet_tider">Öppettider</a>
+     <a href="#kontakt">Kontakt</a>
     </nav>
 
-    <main>
-      <article id="article1">
+<img src="summer-meadow-823511_1920.jpg" id="image" alt="Bild av Lena Petersson Pixabay">
+
+    <main class="main">
+      <article class="article1">
         <h2>OM OSS</h2>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas expedita
           in perspiciatis, veritatis vitae nesciunt provident ratione ipsa dolorem
           placeat beatae suscipit distinctio culpa repudiandae ex magnam optio
           asperiores fuga?
-        </p>
-      </article>
-      <article id="article2">
-        <h2>EVENEMANG</h2>
-        <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas expedita
           in perspiciatis, veritatis vitae nesciunt provident ratione ipsa dolorem
           placeat beatae suscipit distinctio culpa repudiandae ex magnam optio
           asperiores fuga?
         </p>
       </article>
-      <aside id="aside">
-      <h2>LUNCH MENY V36</h2>
+
+      <article class="article2">
+        <h2>EVENEMANG</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas expedita
+          in perspiciatis, veritatis vitae nesciunt provident ratione ipsa dolorem
+          placeat beatae suscipit distinctio culpa repudiandae ex magnam optio
+          asperiores fuga?
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas expedita
+          in perspiciatis, veritatis vitae nesciunt provident ratione ipsa dolorem
+          placeat beatae suscipit distinctio culpa repudiandae ex magnam optio
+          asperiores fuga?
+        </p>
+      </article>
+
+      <aside class="aside">
+      <h2 id="lunch_meny">LUNCH MENY V36</h2>
+      <!-- adding id to h2 for white color and the link from nav -->
       <ul>
         <li>Mondag: LUNCH MENY LUNCH MENY LUNCH MENY LUNCH MENY</li>
         <li>Tisdag: LUNCH MENY LUNCH MENY LUNCH MENY LUNCH MENY</li>
@@ -43,16 +57,30 @@
         <li>Fredag: LUNCH MENY LUNCH MENY LUNCH MENY LUNCH MENY</li>
       </ul>
     </aside>
-    </main>
+
+    <section class="sect1">
+      <h2 id="oppet_tider">ÖPPETTIDER</h2>
+      <!-- adding id to h2 for the link from nav -->
+      <ul>
+        <li>Måndag 11:00 - 21:00</li>
+        <li>Tisdag 11:00 - 21:00</li>
+        <li>Onsdag 11:00 - 21:00</li>
+        <li>Torsdag 11:00 - 21:00</li>
+        <li>Fredag 11:00 - 22:00</li>
+        <li>Lördag 12:00 - 22:00</li>
+        <li>Söndag 12:00 - 21:00</li>
+      </ul>
+    </section>
+
+    <section class="sect2">
+      <h2 id="kontakt">KONTAKT</h2>
+      <!-- adding id to h2 for the link from nav -->
+      <img src="map" alt="Karta">
+    </section>
 
     <footer id="footer">Copyright © 2024, Oresta.</footer>
 
+  </main>
+
 </body>
 </html>
-<!--
-<ul>
-  <li><a href="index.html">Hem</a></li>
-  <li><a href="#aside">Lunch Meny</a></li>
-  <li><a href="about.html">Öppettider</a></li>
-</ul>
--->
