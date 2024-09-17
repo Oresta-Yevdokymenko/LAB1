@@ -1,15 +1,16 @@
-@font-face
-{
+/*Special font for the headings*/
+@font-face{
     font-family: "MyFont";
     src: url("images and font/PlaywriteCU-VariableFont_wght.ttf");
 }
 
 body{
     background-color: #fff;
-    color: #677A33;
-    font-family:MyFont;
+    color: #222A0E;
+    font-family: cursive;
+    font-style: italic;
 }
-
+/*Main section will be according to grid template area*/
 .main{
     display:grid;
     grid-template-areas:
@@ -21,7 +22,7 @@ body{
     gap: 3rem;
     height:100px;
 }
-
+/*Removing blue colour and bulets from the links in nav*/
 a{
     color: #222A0E;
     text-decoration: none;
@@ -29,20 +30,26 @@ a{
 }
 
 nav{
-    padding: 0.2rem;
+    margin: 5px;
+    font-family:MyFont;
+    font-style: normal;
 }
 
 h1{
     color: #677A33;
     text-align: center;
+    margin: 0;
     font-size: 40pt;
     font-weight: 100;
-    margin: 0;
+    font-family:MyFont;
+    font-style: normal;
 }
 
 h2{
-    color:#222A0E;
+    color:#677A33;
     text-align: center;
+    font-family:MyFont;
+    font-style: normal;
 }
 
 .article1{
@@ -60,37 +67,44 @@ h2{
     color: #fff;
     grid-area:aside;
     text-align: left;
-    margin-top: 1rem;
-    padding: 0.5rem;
+    margin: 1rem;
 }
-
+/*This heading should be white becouse of green BG*/
 #lunch_meny{
     color: #fff;
 }
 
 .sect1{
     grid-area: sect1;
-    text-align: center;
+    text-align: left;
 }
 
 .sect2{
     grid-area: sect2;
     text-align: center;
 }
-
+/*Removing bulets from the list*/
 ul{
     list-style: none;
+}
+/*Adding some extra space around the each line in the list*/
+li{
+margin-bottom: 20px;
 }
 
 #footer{
     background-color: #677A33;
     color: #fff;
     grid-area: footer;
-    padding: 0.2rem;
+    padding: 10px;
+    font-size: small;
+    font-family:MyFont;
+    font-style: normal;
 }
-
+/*Different grid template for the mobile version*/
 @media only screen and (max-width: 550px)
-{ .main{
+{
+    .main{
         display:grid;
         grid-template-areas:
         "art1"
@@ -103,7 +117,12 @@ ul{
         grid-template-rows:1fr 1fr 2.5fr 1fr 1fr 0.5fr;
         height: 100px;
      }
-h1{
+
+    h1{
     font-size: 30px;
-}
+    }
+
+    nav{
+    display: grid;
+    }
 }
