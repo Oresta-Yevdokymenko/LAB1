@@ -1,7 +1,7 @@
 /*Special font for the headings*/
 @font-face{
     font-family: "MyFont";
-    src: url("images and font/PlaywriteCU-VariableFont_wght.ttf");
+    src: url("images_and_font/PlaywriteCU-VariableFont_wght.ttf");
 }
 
 body{
